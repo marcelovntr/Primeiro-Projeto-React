@@ -1,4 +1,4 @@
-
+import CardTrilha from "./components/CardTrilha"
 
 function App() {
   
