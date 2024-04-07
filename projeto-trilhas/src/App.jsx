@@ -9,7 +9,7 @@ function App() {
     {
 
       nomeTrilha: 'Trilha da Costa da Lagoa',
-      cidade: 'Florinaópolis',
+      cidade: 'Florinópolis',
       estado: 'SC',
       duracao: '120',
       trajeto: '4',
@@ -29,9 +29,7 @@ function App() {
 
         listaTrilhas.map((trilha, index) => (
           <CardTrilha dadosTrilha={trilha} key={index} />
-        )
-
-        )
+        ))
       }
     </>
   )

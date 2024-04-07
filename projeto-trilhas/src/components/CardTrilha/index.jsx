@@ -1,4 +1,4 @@
-function CardTrilha(dadosTrilha){
+function CardTrilha({dadosTrilha}){
 
 
 
