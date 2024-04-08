@@ -11,7 +11,7 @@ function App() {
       nomeTrilha: 'Trilha da Costa da Lagoa',
       cidade: 'Florinópolis',
       estado: 'SC',
-      duracao: '120',
+      duracao: 120,
       trajeto: '4',
       dificuldade: 'iniciante',
       tipo: 'caminhada / trekking',
