@@ -1,5 +1,6 @@
 import CardTrilha from "./components/CardTrilha"
 
+
 function App() {
 
 
@@ -12,7 +13,7 @@ function App() {
       cidade: 'Florinópolis',
       estado: 'SC',
       duracao: 120,
-      trajeto: '4',
+      trajeto: 4,
       dificuldade: 'iniciante',
       tipo: 'caminhada / trekking',
       nomeUsuario: 'Guilherme André',

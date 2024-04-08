@@ -1,17 +1,21 @@
 import * as PropTypes from "prop-types" //sempre assim
 
+import "./style.css"
+
+
+
 function CardTrilha({dadosTrilha}){
 
 
 
 return(
-    <>
+    <div className="card_container">
 
     <h1>{dadosTrilha.nomeTrilha}</h1>
     <span>{dadosTrilha.cidade} / {dadosTrilha.estado}</span>
     <img width={200} src={dadosTrilha.urlImagem} alt="imagem da trilha" />
 
-    </>
+    </div>
 )
 
 
