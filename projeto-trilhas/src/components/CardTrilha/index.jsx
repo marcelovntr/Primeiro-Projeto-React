@@ -4,26 +4,26 @@ import "./style.css"
 
 
 
-function CardTrilha({dadosTrilha}){
+function CardTrilha({ dadosTrilha }) {
 
 
 
-return(
-    <div className="card_container">
+    return (
+        <div className="card_container">
+            <img className="card_imagem" width={200} src={dadosTrilha.urlImagem} alt="imagem da trilha" />
+            <h1>{dadosTrilha.nomeTrilha}</h1>
+            <span>{dadosTrilha.cidade} / {dadosTrilha.estado}</span>
 
-    <h1>{dadosTrilha.nomeTrilha}</h1>
-    <span>{dadosTrilha.cidade} / {dadosTrilha.estado}</span>
-    <img width={200} src={dadosTrilha.urlImagem} alt="imagem da trilha" />
 
-    </div>
-)
+        </div>
+    )
 
 
 }
 
 CardTrilha.prototypes = {
-                            //.shape aceitaria algo inexistente; exact precisa ser... exato. Tbm tudo precisa ser passado, não pode ficar em branco
-    dadosTrilha: PropTypes.exact ({   
+    //.shape aceitaria algo inexistente; exact precisa ser... exato. Tbm tudo precisa ser passado, não pode ficar em branco
+    dadosTrilha: PropTypes.exact({
         nomeTrilha: PropTypes.string.isRequired,
         cidade: PropTypes.string.isRequired,
         estado: PropTypes.string.isRequired,
@@ -35,7 +35,7 @@ CardTrilha.prototypes = {
         nomeUsuario: PropTypes.string.isRequired,
         urlImagem: PropTypes.string.isRequired
     })
-        
+
 }
 
 // aqui vão os prop-types
