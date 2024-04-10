@@ -2,6 +2,8 @@
     display: flex;
     box-shadow: .2em .2em .8em black;
     height: 15em;
+    margin-bottom: 50px;
+    width: 700px;
 }
 
 .card_imagem{
