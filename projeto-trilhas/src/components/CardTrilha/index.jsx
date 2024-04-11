@@ -13,6 +13,8 @@ function CardTrilha({ dadosTrilha }) {
             <img className="card_imagem" width={200} src={dadosTrilha.urlImagem} alt="imagem da trilha" />
             <h1>{dadosTrilha.nomeTrilha}</h1>
             <span>{dadosTrilha.cidade} / {dadosTrilha.estado}</span>
+            <br /><span>{dadosTrilha.trajeto + ' Km '}</span>
+            <br /><span>{dadosTrilha.duracao + ' minutos'}</span>
 
 
         </div>
