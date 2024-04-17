@@ -9,3 +9,9 @@
         --white: #ffffff;
         --black: #181818;
       }
+
+    
+        .container{
+
+        padding: 4em;
+      }

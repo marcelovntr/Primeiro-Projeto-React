@@ -1,24 +1,13 @@
-import CardTrilha from "./components/CardTrilha"
 import "./App.css"
-import useFetch from "./hooks/useFetch"
-import { useEffect, useState } from "react";
 import Header from "./components/Header";
-
 import routes from "./router/routes";
 import { Outlet } from "react-router-dom";
+import PaginaLista from "./pages/PaginaLista";
 
 function App() {
 
-  const [dados, isLoading] = useFetch("/dados.json")
-  const [trilhas, setTrilhas] = useState([])
-
-  useEffect(() => {
-    if (!!dados && !isLoading) {
-      setTrilhas(dados.trilhas)
-    }
-  }, [dados])
-
-
+  // useFetch("/dados.json") e useState([]) e useEffect(() => { estavam aqui e foram pra PaginaLista
+ 
 
 
   return (
@@ -29,17 +18,9 @@ function App() {
 
       <Outlet />
       
-      <Footer />
+      {/* <Footer /> */}
 
-      <div className="container">
-        <h1 className="titulo">Explore Trilhas</h1>
-
-        {Array.isArray(trilhas)
-          && trilhas.map((trilha, index) => (
-            <CardTrilha dadosTrilha={trilha} key={index} />
-          ))
-        }
-      </div>
+      {/* container com as trilhas estava aqui antes... foi tranferido para PáginaLista.jsx */}
       {/* {!!dados && JSON.stringify(dados)} */}
     </>
   )
