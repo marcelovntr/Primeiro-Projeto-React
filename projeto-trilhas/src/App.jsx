@@ -1,9 +1,10 @@
 import CardTrilha from "./components/CardTrilha"
 import "./App.css"
+import useFetch from "./hooks/useFetch"
 
 function App() {
 
-
+const dados = useFetch("/dados.json")
 
 
   const listaTrilhas = [
@@ -17,7 +18,7 @@ function App() {
       dificuldade: 'iniciante',
       tipo: 'caminhada / trekking',
       nomeUsuario: 'Guilherme André',
-      urlImagem: 'https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      urlImagem: 'https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
     },
 
@@ -31,7 +32,7 @@ function App() {
       dificuldade: 'intermediária',
       tipo: 'caminhada / trekking',
       nomeUsuario: 'Paulo Antunes',
-      urlImagem: 'https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      urlImagem: 'https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
     }
   ]
