@@ -10,7 +10,7 @@ function App() {
   const [trilhas, setTrilhas] = useState([])
 
 useEffect(() => {
-  if(!!dados && isLoading){
+  if(!!dados && !isLoading){
     setTrilhas(dados.trilhas)
   }
 },[dados])
@@ -25,7 +25,8 @@ useEffect(() => {
       <div className="container">
         <h1 className="titulo">Explore Trilhas</h1>
 
-        {!!trilhas && trilhas.map((trilha, index) => (
+        {Array.isArray(trilhas) 
+        && trilhas.map((trilha, index) => (
             <CardTrilha dadosTrilha={trilha} key={index} />
           ))
         }

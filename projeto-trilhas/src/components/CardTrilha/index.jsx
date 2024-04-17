@@ -15,7 +15,9 @@ function CardTrilha({ dadosTrilha }) {
             <span>{dadosTrilha.cidade} / {dadosTrilha.estado}</span>
             <br /><span>{dadosTrilha.trajeto + ' Km '}</span>
             <br /><span>{dadosTrilha.duracao + ' minutos'}</span>
-
+            <br />
+            <p>{dadosTrilha.tipo}</p>
+            <p>{dadosTrilha.dificuldade}</p>
 
         </div>
     )
