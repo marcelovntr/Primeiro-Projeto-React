@@ -3,10 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 
-
+}
     :root {
-        --primary: #504908;
+        --primary: #2a4b17;
         --white: #ffffff;
         --black: #181818;
       }
-}
