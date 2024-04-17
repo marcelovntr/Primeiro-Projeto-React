@@ -1,7 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/* forma de importação pelo google fonts */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* font-family: "Comfortaa", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    /*importado por instalação!!!*/
 
 }
     :root {

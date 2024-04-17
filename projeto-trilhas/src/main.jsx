@@ -5,6 +5,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import routes from './router/routes'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<App /> <-- retira-se após criar o routerprovider
   <RouterProvider router={routes}/>
