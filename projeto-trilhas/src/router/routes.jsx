@@ -1,22 +1,30 @@
-import { createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 const routes = createBrowserRouter([
 
-{
-    path: "/",
-    element: <PaginaInicial />
-},
+    {
 
-{
-    path: "/cadastro-trilha",
-    element: <PaginaCadastro />
-},
-{
-    path: "/lista",
-    element: <PaginaLista />
-}
+        path: "/",
+        element: <App />,
+        errorElement: <PaginaErro />,
+        children: [
+            {
+                path: "/",
+                element: <PaginaInicial />
+            },
+
+            {
+                path: "/cadastro-trilha",
+                element: <PaginaCadastro />
+            },
+            {
+                path: "/lista",
+                element: <PaginaLista />
+            }
 
 
-]
-)
+        ]
+    }
+    ])
 
+export default routes
