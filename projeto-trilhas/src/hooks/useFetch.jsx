@@ -15,6 +15,10 @@ fetch(url)
     setDados(data);
     setIsLoading(false); });
 
+    // return()=>{ <-- poderia haver este return aqui, que serve pra "limpeza" (desmontagem)
+    //     setIsLoading(true)
+    // }
+
 },[url]);
 
 return [dados, isLoading];

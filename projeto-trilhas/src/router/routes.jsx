@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import PaginaInicial from "../pages/PaginaInicial";
-import PaginaCadastro from "../pages/PaginaCadastro";
+import PaginaCadastro from "../pages/PaginaCadastro/PaginaCadastro";
 import PaginaLista from "../pages/PaginaLista";
 import PaginaErro from "../pages/PaginaErro";
 

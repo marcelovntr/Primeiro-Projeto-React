@@ -1,0 +1,26 @@
+.containercadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(232, 240, 159);
+    
+}
+
+.formcadastro{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    width: 600px;
+    gap: 8px;
+    height: 100vh;
+}
+
+button{
+    border-radius: 4px;
+    padding: 8px, 16px, 8px, 16px;
+    width: 111px;
+    height: 40px;
+}
