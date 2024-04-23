@@ -5,7 +5,7 @@
     padding: 4em;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(232, 240, 159);
+    background-color: var(--secondary)
     
 }
 

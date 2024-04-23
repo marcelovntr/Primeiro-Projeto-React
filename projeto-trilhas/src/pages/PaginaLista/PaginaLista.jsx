@@ -1,6 +1,7 @@
-import CardTrilha from "../components/CardTrilha"
-import { TrilhasContext } from "../context/TrilhasContext"
+import CardTrilha from "../../components/CardTrilha"
+import { TrilhasContext } from "../../context/TrilhasContext"
 import { useContext } from "react"
+import styles from "./style.module.css";
 
 
 

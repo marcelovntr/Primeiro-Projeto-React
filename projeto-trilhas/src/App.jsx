@@ -1,8 +1,9 @@
 import "./App.css"
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import routes from "./router/routes";
 import { Outlet } from "react-router-dom";
-import PaginaLista from "./pages/PaginaLista";
+import PaginaLista from "./pages/PaginaLista/PaginaLista";
 import { TrilhasContextProvider } from "./context/TrilhasContext"
 
 
@@ -24,6 +25,8 @@ function App() {
 
       {/* container com as trilhas estava aqui antes... foi tranferido para PáginaLista.jsx */}
       {/* {!!dados && JSON.stringify(dados)} */}
+
+      <Footer />
     </TrilhasContextProvider>
   )
 }

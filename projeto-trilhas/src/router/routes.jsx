@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import PaginaInicial from "../pages/PaginaInicial";
+import PaginaInicial from "../pages/PaginaInicial/PaginaInicial";
 import PaginaCadastro from "../pages/PaginaCadastro/PaginaCadastro";
-import PaginaLista from "../pages/PaginaLista";
+import PaginaLista from "../pages/PaginaLista/PaginaLista";
 import PaginaErro from "../pages/PaginaErro";
 
 const routes = createBrowserRouter([

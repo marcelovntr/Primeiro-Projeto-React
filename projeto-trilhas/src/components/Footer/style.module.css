@@ -1,0 +1,19 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 3em;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.esquerda{
+margin-left: 50px;
+}
+
+.direita{
+    margin-right: 50px;
+}

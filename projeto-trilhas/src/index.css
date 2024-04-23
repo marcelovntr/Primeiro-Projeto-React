@@ -9,12 +9,14 @@
     /* font-family: "Comfortaa", sans-serif; */
     font-family: "Roboto", sans-serif;
     /*importado por instalação!!!*/
+    
 
 }
     :root {
         --primary: #2a4b17;
         --white: #ffffff;
-        --black: #181818;
+        --black: #1d1d1d;
+        --secondary:  rgb(251, 255, 214);
       }
 
     

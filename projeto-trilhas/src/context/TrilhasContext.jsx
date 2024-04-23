@@ -10,9 +10,9 @@ export const TrilhasContextProvider = ({ children }) => {
 
     const [dados, isLoading] = useFetch("/dados.json") //<-- minha lista
 
-    const [trilhas, setTrilhas] = useState([])
+    const [trilhas, setTrilhas] = useState([dados])
 
-    const [trilhasLista, setNovaTrilha] = useState(["/dados.json"])
+    const [trilhasLista, setNovaTrilha] = useState([])
 
 
     function adicionarTrilha(trilha) {
