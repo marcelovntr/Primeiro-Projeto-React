@@ -2,7 +2,8 @@
     display: flex;
     box-shadow: .2em .2em .8em black;
     height: 15em;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
     width: 700px;
 }
 

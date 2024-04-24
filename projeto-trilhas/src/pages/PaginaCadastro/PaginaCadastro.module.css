@@ -4,9 +4,14 @@
     align-items: center;
     padding: 4em;
     width: 100vw;
-    height: 100vh;
-    background-color: var(--secondary)
+    min-height: 100vh;
+    background-color: var(--secondary);
     
+}
+
+.titulo{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .formcadastro{
@@ -14,17 +19,53 @@
     flex-direction: column;
     /* background-color: cadetblue; */
     width: 600px;
-    gap: 8px;
+    gap: 1rem;
     height: 100vh;
+}
+
+.formcadastro div{
+    display: flex;
+    flex-direction: column;
 }
 .formcadastro p{
     color: red;
     font-size: 0.75rem;
 }
-
-button{
+.formcadastro input, select{
+    height: 32px;
     border-radius: 4px;
-    padding: 8px, 16px, 8px, 16px;
+    padding: 5px 8px;
+    box-shadow: none;
+    outline: none;
+    background-color:rgb(245, 248, 205);
+    
+}
+.formcadastro label{
+    
+    font-size: 0.9rem;
+}
+
+.butao{
+    display: flex;
+    flex-direction: row;
+   width: 100%;
+   margin-top: 0.5rem;
+    
+}
+.butao button{
+    
+    border-radius: 6px;
+    padding: 8px 16px;
     width: 111px;
     height: 40px;
+    margin-right: 6px; 
+    margin-left: 10px;
+}
+.butaoright{
+    background-color: rgb(155, 163, 70);
+    color: var(--primary);
+}
+.butaoleft{
+    background-color: var(--primary);
+    color: var(--white);
 }

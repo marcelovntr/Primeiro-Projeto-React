@@ -7,7 +7,7 @@ import styles from "./style.module.css"
 function CardTrilha({ dadosTrilha }) {
 
     if (!dadosTrilha) {
-        return null; // ou renderize uma mensagem de erro ou carregamento
+        return null; // ou renderizar uma mensagem de erro ou carregamento
     }
 
     return (
