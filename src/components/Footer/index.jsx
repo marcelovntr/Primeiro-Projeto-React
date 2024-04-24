@@ -10,9 +10,9 @@ return(
 
         </span>
         <span className={styles.direita}>
-            <img src="../public/githubiconsmall.png" alt="icone github" />
-            <img src="../public/linkediniconsmall.png" alt="icone linkedin" />
-            <img src="../public/instagramiconsmall.png" alt="icone instagram" />
+            <img src="../githubiconsmall.png" alt="icone github" />
+            <img src="../linkediniconsmall.png" alt="icone linkedin" />
+            <img src="../instagramiconsmall.png" alt="icone instagram" />
         </span>
     </footer>
 

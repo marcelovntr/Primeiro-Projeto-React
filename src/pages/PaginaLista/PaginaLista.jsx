@@ -16,7 +16,7 @@ function PaginaLista() {
 
 
 
-            <img src="../public/montanha.png    " alt="imagem de montanha de fundo" />
+            <img src="../montanha.png    " alt="imagem de montanha de fundo" />
             <h1>Explore Trilhas</h1>
 
             {Array.isArray(trilhas)

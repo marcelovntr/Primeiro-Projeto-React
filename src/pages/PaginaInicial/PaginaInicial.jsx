@@ -20,7 +20,7 @@ function PaginaInicial() {
                     <h2>Compartilhe fotos, dicas e localização das suas trilhas favoritas</h2>
                     <button>Cadastrar trilha</button>
                 </div>
-                <img src="../public/mato.jpg " alt="imagem trilha floresta" />
+                <img src="../mato.jpg " alt="imagem trilha floresta" />
 
             </div>
 
