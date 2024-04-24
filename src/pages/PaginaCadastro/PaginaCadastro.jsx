@@ -139,7 +139,7 @@ function PaginaCadastro() {
         </div>
         <span className={styles.butao}>
           <button className={styles.butaoleft} type="submit">Cadastrar</button>
-          <button className={styles.butaoright} >Voltar</button>
+          <button className={styles.butaoright} onClick={() => navigate("/")}>Voltar</button>
         </span>
       </form>
 
