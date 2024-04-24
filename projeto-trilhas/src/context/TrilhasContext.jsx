@@ -20,6 +20,7 @@ export const TrilhasContextProvider = ({ children }) => {
         setTrilhas((t) => [...t, trilha]);
     }
 
+    //************************************************************************ */
     function adicionarTrilhaNaLista(trilha) {
         setNovaTrilha((tl) => [...tl, { ...trilha, id: tl.length + 1 }])
     }
