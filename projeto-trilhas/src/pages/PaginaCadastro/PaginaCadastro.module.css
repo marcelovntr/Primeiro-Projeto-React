@@ -12,10 +12,14 @@
 .formcadastro{
     display: flex;
     flex-direction: column;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 600px;
     gap: 8px;
     height: 100vh;
+}
+.formcadastro p{
+    color: red;
+    font-size: 0.75rem;
 }
 
 button{

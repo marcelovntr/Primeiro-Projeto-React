@@ -7,14 +7,17 @@ import styles from "./style.module.css";
 
 function PaginaLista() {
 
-const {trilhas} = useContext(TrilhasContext); //<-- importando o useContext no código propriamente
+    const { trilhas } = useContext(TrilhasContext); //<-- importando o useContext no código propriamente
 
 
 
     return (
-        <div className="container">
+        <div className={styles.containerlista}>
 
-            <h1 className="titulo">Explore Trilhas</h1>
+
+
+            <img src="../src/assets/montanha.png    " alt="imagem de montanha de fundo" />
+            <h1>Explore Trilhas</h1>
 
             {Array.isArray(trilhas)
                 && trilhas.map((trilha, index) => (

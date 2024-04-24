@@ -1,16 +1,18 @@
 import * as PropTypes from "prop-types" //sempre assim
 
-import "./style.css"
+import styles from "./style.module.css"
 
 
 
 function CardTrilha({ dadosTrilha }) {
 
-
+    if (!dadosTrilha) {
+        return null; // ou renderize uma mensagem de erro ou carregamento
+    }
 
     return (
-        <div className="card_container">
-            <img className="card_imagem" width={200} src={dadosTrilha.urlImagem} alt="imagem da trilha" />
+        <div className={styles.cardcontainer}>
+            <img className={styles.card_imagem} width={200} src={dadosTrilha.urlImagem} alt="imagem da trilha" />
             <h1>{dadosTrilha.nomeTrilha}</h1>
             <span>{dadosTrilha.cidade} / {dadosTrilha.estado}</span>
             <br /><span>{dadosTrilha.trajeto + ' Km '}</span>
@@ -35,12 +37,12 @@ CardTrilha.prototypes = {
         trajeto: PropTypes.number.isRequired,
         dificuldade: PropTypes.string.isRequired,
         //oneOf é uma forma de "enum"
-        tipo: PropTypes.oneOf(['caminhada / trekking', 'ciclismo']),
-        nomeUsuario: PropTypes.string.isRequired,
+        tipo: PropTypes.oneOf(['caminhada / trekking', 'ciclismo / motocross', 'carro / offroad']),
+        usuario: PropTypes.string.isRequired,
         urlImagem: PropTypes.string.isRequired
     })
 
 }
 
-// aqui vão os prop-types
+
 export default CardTrilha;

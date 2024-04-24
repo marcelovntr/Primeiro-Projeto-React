@@ -2,7 +2,8 @@
   import { useForm } from "react-hook-form"
   import { TrilhasContext } from "../../context/TrilhasContext";
   import styles from "./PaginaCadastro.module.css"
-  // import { useHistory } from "react-router-dom";
+  
+ 
 
 
   function PaginaCadastro() {
@@ -10,20 +11,16 @@
 
       const { adicionarTrilha } = useContext(TrilhasContext);
 
-      // const history = useHistory();
-
-
 
       function onSubmit(formValue) {
           console.log("valores do formulário:\n", formValue);
 
         
           adicionarTrilha(formValue);
-          // history.push("/lista");
+        
           
       }
-
-
+   
       return (
           <div className={styles.containercadastro}>
 
@@ -101,9 +98,9 @@
         
         <label htmlFor="tipo">Tipo de trilha</label>
         <select {...register("tipo", { required: true })}>
-          <option value="Caminhada/trekking">Caminhada/trekking</option>
-          <option value="bicicleta/motocross"> bicicleta/motocross</option>
-          <option value="carro/offroad"> carro/offroad</option>
+          <option value="Caminhada / trekking"> caminhada/trekking</option>
+          <option value="ciclismo / motocross"> ciclismo/motocross</option>
+          <option value="carro / offroad"> carro/offroad</option>
         </select>
         
         <label htmlFor="urlImagem">"Url da imagem"</label>
